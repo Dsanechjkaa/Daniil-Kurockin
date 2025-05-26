@@ -12,7 +12,9 @@ void show_help() {
 }
 
 void show_author() {
-    std::cout << "Calculator v1.0\nCreated by [Your Name]\n";
+    std::cout << "Calculator v1.0\n"
+              << "Created by DANIIL KUROCHKIN\n"
+              << "Email: danechka@mail.ru\n";
 }
 
 int main(int argc, char* argv[]) {

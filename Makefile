@@ -17,3 +17,7 @@ clean:
 	rm -f lib/*.o lib/$(LIBNAME) $(TARGET)
 
 .PHONY: all lib clean
+BUILD_INFO = -DAUTHOR_NAME='"DANIIL KUROCHKIN"' -DAUTHOR_EMAIL='"your.email@example.com"'
+
+all:
+    $(CC) $(CFLAGS) $(BUILD_INFO) -c src/main.cpp -o main.o
